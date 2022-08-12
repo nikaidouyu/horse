@@ -975,7 +975,7 @@ export default {
         this.todos.push()
       }
       else {
-        alert("キャンセルしました")
+        // alert("キャンセルしました")
         
       }
       console.log("puru");
