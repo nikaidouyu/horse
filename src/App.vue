@@ -5,7 +5,6 @@
 </template>
 
 <style>
-@charset "UTF-8";
 
 /*
 html5doctor.com Reset Stylesheet

@@ -1,9 +1,9 @@
 <template>
 <div class="predict">
   <Header2 />
-
-  
   <div class="predict1">
+    <input v-model="date">
+    <button @click="submit">送信</button>
     <table>
       <tr>
         <th class="th1">印</th>
@@ -42,6 +42,15 @@
         <td></td>
         <td></td>
         <td></td>
+        <!-- <td>{{keiba.name}}</td>
+        <td>{{keiba.father}}</td>
+        <td></td>
+        <td>{{keiba.groundfather}}</td>
+        <td></td>
+        <td>{{keiba.biggroundfather}}</td>
+        <td></td>
+        <td>{{keiba.biggroundfather2}}</td>
+        <td></td> -->
       </tr>
     </table>
   </div>
@@ -50,12 +59,38 @@
 
 <script>
 import Header2 from "../components/Header2";
-
+// eslint-disable-next-line no-unused-vars
+// import axios from 'axios';
 export default {
   components:{
     Header2,
-  }
-}
+  },
+  // data: function() {
+  //       return {
+  //           name: '',
+  //           father: '',
+  //           groundfather: '',
+  //           biggroundfather: '',
+  //           biggroundfather2: '',
+  //       }
+  //   },
+  //  methods: {
+  //       submit: async function(){
+  //           const result = await this.send();
+  //           this.result = result;
+  //       },
+  //       send: async function(){
+  //           const url = 'http://localhost/api/contact/send.php';
+  //           const params = {
+  //               'name': this.name,
+  //               'father': this.father,
+  //               'groundfather': this.groundfather,
+  //               'ebiggroundfather': this.biggroundfather,
+  //               'ebiggroundfather2': this.biggroundfather2
+  //           }  
+  //          }
+  //        }
+       }
 </script>
 
 <style scoped>
@@ -69,12 +104,12 @@ export default {
   width:17.2%;
 }
 
-.th5 {
+.th4 {
   width:10%;
 }
 
 .th1,.th2,.th3,.th6,.th8,.th10,.th12 {
-  width:2%;
+  width:1%;
 }
 
 .mark {
